@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.main-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background: #262525;
+}
+
+/* nav css */
+.navlist{
+    display: flex;
+    gap:3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+.navlist li a::after, .navlist .active::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin:bottom right ;
+    transition: transform .5s;
+}
+.navlist li a:hover::after, .navlist .active{
+    transform: scaleX(1);
+    transform-origin:bottom left ;
+}
+/* end of nav css */
+
+
+.container .row{
+   display: flex;
+   flex-wrap: wrap;
+  
+}
+ .box{
+    background: red;
+    height: 60vh;
+    border-radius: 10px;
+    margin-left: 1.8rem;
+    border: .1rem solid #5db9ee;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+    background:#5db9ee;
+    color: #262525;
+ }
+ .box:hover{ background: transparent;
+    color: #5db9ee;
+ }
+.container h1{
+    font-size: 3.7rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 4rem;
+}
+.container  span{
+    color: #3877FF;
+}
+.box h1{
+    padding-top: .5rem;
+}
+.box .p{
+    font-size: 1.8rem;
+}
+.box p{
+    text-align: center;
+}
+.btn-container button{
+    border: .1rem solid #5db9ee;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem ;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+    color: #5db9ee;
+    margin-left: .2rem;
+    background: #262525;
+    }
+    button:hover{
+        background: #5db9ee;
+        color: #262525;
+    }
+    .fa-solid{
+        color: #262525;
+    }
+    .fa-solid:hover{
+        color: #3877FF;
+    }
+
+
+   
